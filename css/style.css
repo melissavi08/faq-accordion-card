@@ -1,7 +1,61 @@
+:root {
+  --backgoundTopColor: #af67e9;
+  --backgoundBottomColor: #6565e7;
+  --primaryTextColor: #1d1e35;
+  --iconColor: #f47c57;
+  --secondaryTextColor: #4a4b5e;
+  --paragraphsColor: #787887;
+  --dividersColor: #e7e7e9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  background-image: linear-gradient(
+    var(--backgoundTopColor),
+    var(--backgoundBottomColor)
+  );
+}
+
+main {
+  align-self: center;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.faqMainContainer {
+  width: 100%;
+  /* max-width: ; */
+  padding: 20px;
+}
+
+.faqContainer {
+  border-bottom: 1px solid var(--dividersColor);
+}
+
+h1 {
+  text-transform: uppercase;
+  color: var(--primaryTextColor);
+}
+
 .attribution {
+  margin: 10px 0px;
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--dividersColor);
 }
