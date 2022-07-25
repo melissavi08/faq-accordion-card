@@ -21,6 +21,7 @@ body {
   width: 100%;
   min-height: 100vh;
   padding: 20px;
+  font-family: "Kumbh Sans", sans-serif;
   background-image: linear-gradient(
     var(--backgoundTopColor),
     var(--backgoundBottomColor)
@@ -30,7 +31,7 @@ body {
 main {
   align-self: center;
   width: 100%;
-  max-width: 900px;
+  max-width: 920px;
   border-radius: 20px;
   background-color: white;
 }
@@ -41,14 +42,56 @@ main {
   padding: 20px;
 }
 
-.faqContainer {
-  border-bottom: 1px solid var(--dividersColor);
-}
-
 h1 {
   text-transform: uppercase;
   color: var(--primaryTextColor);
 }
+
+.faqContainer {
+  padding: 16px 0px;
+  border-bottom: 1px solid var(--dividersColor);
+}
+
+/* .faqSummaryContainer {
+  display: flex;
+  justify-content: space-between;
+} */
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 14px;
+}
+
+summary::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-image: url(../images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+summary:hover {
+  color: var(--iconColor);
+}
+
+summary:focus {
+}
+
+.faqTextCollapse {
+  display: none;
+  font-size: 12px;
+}
+
+/* summary {
+  color: var(--primaryTextColor);
+  font-weight: 700;
+} */
 
 .attribution {
   margin: 10px 0px;
